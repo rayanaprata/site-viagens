@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    list-style: none;
+    display: flex; /*colocar um do ladinho do outro (já vem por padrão flex-direction row (linha)*/
+}
+
+li {
+    margin: 0 15px; /*top/bottom left/right*/
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /*deixa um espaço entre os conteúdos, se somar o mesmo esáço das laterais, da o espço do meio*/
+    margin: 0 30px;
+}
+
+nav p {
+    font-weight: bold;
+}
