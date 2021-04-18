@@ -1,25 +1,187 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
 
+/* azul claro: #A7C9DA */
+/* azul escuro: #172334 */
+/* vermelho #B10912 */
+
+* {
+    box-sizing: border-box;
+  }
+
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
 
-ul {
-    list-style: none;
-    display: flex; /*colocar um do ladinho do outro (já vem por padrão flex-direction row (linha)*/
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 0;
+    background: #B10912;
+    color: white;
 }
 
-li {
-    margin: 0 15px; /*top/bottom left/right*/
+header {
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url('assets/header-imagem.jpg')
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: space-between; /*deixa um espaço entre os conteúdos, se somar o mesmo esáço das laterais, da o espço do meio*/
     margin: 0 30px;
 }
 
-nav p {
+header nav p {
     font-weight: bold;
 }
+
+
+header nav ul {
+    list-style: none;
+    display: flex; /*colocar um do ladinho do outro (já vem por padrão flex-direction row (linha)*/
+}
+
+header nav ul li {
+    margin: 0 15px; /*top/bottom left/right*/
+}
+
+.header-content {
+    max-width: 475px;
+    margin: 150px auto;
+    text-align: center;
+    color: #1e1e1e;
+}
+
+.header-content h1 {
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+.pacotes {
+    background: #eae3e8;
+    padding: 15px;
+}
+
+.pacotes .pacotes-cards {
+    display: flex;
+}
+
+.pacotes .pacotes-title {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.pacotes .card {
+    width: 250px;
+    height: 350px;
+    background: white;
+    border-radius: 24px 0px;
+    margin: 25px auto;
+    position: relative;
+}
+
+.pacotes .card-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0px 0px;
+}
+
+
+.pacotes .card-content {
+    padding-left: 15px;
+}
+
+.pacotes .card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.pacotes .card-content ul li {
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    color: #4f4f4f;
+}
+
+.pacotes .card-content li svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;;
+}
+
+.pacotes .card-content h1 {
+    font-size: 1rem;
+}
+
+.pacotes .card .card-tag-top {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #f4bf00;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag-bottom {
+    position: absolute;
+    left: 0;
+    top: 160px;
+    background: #172334;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: white;
+    font: bold;
+}
+
+/* RESPONSIVIDADE */
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    body {
+        height: calc(100vh - 55px)
+    }
+
+    header nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        background: #172334;
+        height: 55px;
+        color: white;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav p {
+        width: 100%;
+        text-align:center;
+    }
+ }
+
+
+/* Portrait tablet to landscape and desktop */
+/*@media (max-width: 768px) and (max-width: 979px) { ... }
+
+/* Large desktop */
+/*@media (max-width: 1200px) { ... }
