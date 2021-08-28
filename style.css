@@ -6,11 +6,17 @@
 
 * {
     box-sizing: border-box;
-  }
+    
+}
+
+* a {
+    text-decoration: none;
+}
 
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    background-color: #94a5b8;
 }
 
 button {
@@ -151,6 +157,56 @@ header nav ul li:hover {
     font-size: 0.8rem;
     color: white;
     font: bold;
+}
+
+footer {
+    height: 300px;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style: none;
+    color:rgb(34, 33, 33);
+}
+
+footer ul a, footer ul li {
+    color:rgb(56, 55, 55);
+    margin-bottom: 5px;
+}
+
+footer ul a:hover {
+    color:rgb(235, 230, 230);
+}
+
+footer .footer_title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.links {
+    display: flex;
+    margin: 10px;
+}
+
+.link {
+    margin-left: 50px;
+}
+
+.midias {
+    margin: 10px 80px;
+    text-align: right;
+}
+
+.midias p {
+    font-weight: bold;
+}
+
+.midias a {
+    color:rgb(56, 55, 55);
+    display: block;
+    margin-bottom: 5px;
 }
 
 /* RESPONSIVIDADE */
