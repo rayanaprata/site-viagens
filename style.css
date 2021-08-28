@@ -19,6 +19,11 @@ button {
     border: 0;
     background: #B10912;
     color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #9c070f;
 }
 
 header {
@@ -44,6 +49,11 @@ header nav ul {
 
 header nav ul li {
     margin: 0 15px; /*top/bottom left/right*/
+    cursor: pointer;
+}
+
+header nav ul li:hover {
+    color: rgb(56, 55, 55);
 }
 
 .header-content {
@@ -59,7 +69,7 @@ header nav ul li {
 }
 
 .pacotes {
-    background: #eae3e8;
+    background: #eeeded;
     padding: 15px;
 }
 
@@ -122,7 +132,7 @@ header nav ul li {
     position: absolute;
     right: 0;
     top: 15px;
-    background: #f4bf00;
+    background: #bd1812;
     border-radius: 8px 0 0 8px;
     padding: 5px 10px;
 }
