@@ -2,6 +2,8 @@
 
 Site de Viagens simples feito com ajuda dos vídeos do canal Papo de Dev no Youtube.
 
+✨ [Clique aqui para acessar o projeto.](https://rayanaprata.github.io/site-viagens/)
+
 ![Site Viagens](assets/site-viagens.png)
 
 ----
